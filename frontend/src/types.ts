@@ -8,6 +8,7 @@ export interface TwitterProfile {
   created_at: string;
   verified: boolean;
   profile_image_url: string;
+  website : string;
 }
 
 export interface InfluenceScore {

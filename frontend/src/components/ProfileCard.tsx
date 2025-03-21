@@ -1,7 +1,8 @@
-import React from 'react';
+
 import { TwitterProfile } from '../types';
 import { Calendar, Users } from 'lucide-react';
 import { format } from 'date-fns';
+// import { Link } from 'react-router-dom';
 
 interface ProfileCardProps {
   profile: TwitterProfile;
@@ -34,6 +35,10 @@ export function ProfileCard({ profile }: ProfileCardProps) {
       </div>
 
       <p className="mt-4 text-gray-700">{profile.description}</p>
+      <p className="mt-4 text-blue-200">{profile.website}</p>
+     
+      {/* <Link to={profile.website==="not found" ? profile.website : '/'} className="mt-4 text-blue-300">{profile.website}</Link> */}
+
 
       <div className="mt-4 grid grid-cols-2 gap-4">
         <div className="flex items-center space-x-2">

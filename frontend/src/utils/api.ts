@@ -38,7 +38,8 @@ export async function fetchTwitterProfile(username: string): Promise<TwitterProf
       following_count: data.friends,
       created_at: data.created_at,
       verified: data.blue_verified || false,
-      profile_image_url: data.avatar || null
+      profile_image_url: data.avatar || null,
+      website: data.website || "not found"
     };
 
     console.log("profile by api ", profile)
